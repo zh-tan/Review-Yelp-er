@@ -13,7 +13,7 @@ Google drive to store our dataset as the files are big and unable to be uploaded
 # System Requirements
 1. Lots of RAM (maybe 20gb+)
 2. At least 1 GPU
-3. Harddisk memory of at least 10gb (3GB for 1 checkpoint)
+3. Harddisk memory of at least 20gb (3GB for 1 model checkpoint, Yelp Dataset is 5GB before cleaning)
 
 # Exploratory Data Analysis
 
