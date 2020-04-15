@@ -20,10 +20,10 @@ Google drive to store our dataset as the files are big and unable to be uploaded
 3. Harddisk memory of at least 20GB (3GB for 1 model checkpoint, Yelp Dataset is 5GB before cleaning)
 
 # Data Cleaning
-__Introduction__ \
+__Objective__ \
 To preprocess the dataset, which can be found at https://www.yelp.com/dataset
 
-__Objective__
+__Content__
 1. Basic NLP Text cleaning
 2. Convert from json to csv
 3. Inner join business.json and review.json
@@ -33,14 +33,14 @@ __Objective__
 
 
 # Exploratory Data Analysis
-__Introduction__ \
+__Objective__ \
 To observe the distribution of words between a good review and a bad review.
 
-__Objective__
+__Content__
 1. Produce scatterplot using scattertext
 
 # LSTM
-__Introduction__ \
+__Objective__ \
 Train 2 LSTM models on 1 star and 5 star reviews. Note that this is only scoped to food-related reviews.
 
 __Setup__
@@ -48,12 +48,12 @@ __Setup__
 2. Code needs to be ran on tensorflow version 1
 3. Code has to be ran on colab with 25gb ram (>12 gb ram will be used) and runtime has to be either GPU or TPU.
 
-__Objective__
+__Content__
 1. Train on food reviews (1 star)
 2. Train on food reviews (5 stars)
 
 # GPT-2
-__Introduction__ \
+__Objective__ \
 This is the training phase of GPT-2. Elaborated in our report and presentation, we have decided to train on both general and food models. 
 
 __Setup__
@@ -62,7 +62,7 @@ __Setup__
 3. This was trained in Colab with GPU and High RAM (30GB RAM) and Google Cloud Platform (1x P100 GPU and 15GB n1-standard-4 CPUs)
 4. Ensure you have at least 10 GB of harddisk space
 
-__Objective__
+__Content__
 Train 2 GPT-2 Large models on Food and General dataset.
 1. Trained on General (Review star 1) 
 2. Trained on General (Review star 5) 
@@ -70,3 +70,5 @@ Train 2 GPT-2 Large models on Food and General dataset.
 4. Trained on Food (Review star 5) 
 
 # Demo
+__Objective__ \
+To generate a Proof-of-Concept using the trained GPT-2 models. We created an app that simulates the autocomplete feature. Instead of just suggesting a word, the autocomplete feature is able to suggest 3 sentences based on the input given. 
