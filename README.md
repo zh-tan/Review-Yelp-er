@@ -58,7 +58,7 @@ This is the training phase of GPT-2. Elaborated in our report and presentation, 
 
 __Setup__
 1. Ensure that gpt-2-simple package is installed and you have sufficient RAM and GPU to train the large model
-2. Make sure that dataset is in same folder
+2. Make sure that dataset is in same folder as notebook
 3. This was trained in Colab with GPU and High RAM (30GB RAM) and Google Cloud Platform (1x P100 GPU and 15GB n1-standard-4 CPUs)
 4. Ensure you have at least 10 GB of harddisk space
 
