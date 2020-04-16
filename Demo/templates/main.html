@@ -1,0 +1,90 @@
+{% extends "bootstrap/base.html" %}
+
+{% block navbar %}
+{{super()}}
+<nav class="navbar navbar-default">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="#">Review Yelp-er</a>
+        </div>
+        <div id="navbar" class="collapse navbar-collapse">
+          	<ul class="nav navbar-nav">
+	            <li><a href="/">Home</a></li>
+				<li class="dropdown">
+	          		<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Generators <span class="caret"></span></a>
+	          		<ul class="dropdown-menu">
+	            		<li><a href="/food_1_star">1 Star Food Review</a></li>
+	            		<li><a href="/food_5_star">5 Star Food Review</a></li>
+	            		<li role="separator" class="divider"></li>
+	            		<li><a href="/general_1_star">1 Star General Review</a></li>
+	            		<li><a href="/general_5_star">5 Star General Review</a></li>
+	          		</ul>
+	        	</li>
+          	</ul>
+        </div>
+      </div>
+    </nav>
+{% endblock %}
+
+{% block content %}	
+<div class="container">
+  	<h3>Welcome to review Yelper! Click on one the the generators below to start on your review!</h3>
+	<div class="btn-group-vertical" id = 'model-output'>
+		<button id=result1 type="button" class="btn btn-secondary"><a href="/food_1_star">Food 1 Star</a></button>
+		<button id=result1 type="button" class="btn btn-secondary"><a href="/food_5_star">Food 5 Stars</a></button>
+		<button id=result1 type="button" class="btn btn-secondary"><a href="/general_1_star">General 1 Star</a></button>
+		<button id=result1 type="button" class="btn btn-secondary"><a href="/general_5_star">General 1 Stars</a></button>
+
+	</div>
+</div>
+{% endblock %}
+
+{% block scripts %}
+{{super()}}
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.7/angular.min.js"></script>
+<script type=text/javascript>
+	$(function() {
+	  $('a#process_input').bind('click', function() {
+		$.getJSON('/food_1', {
+		  message: $('textarea[name="message"]').val(),
+		  complexity: $('input[name="slider"]').val(),
+		}, function(data) {
+		  $("#result1").text(data.result1);
+		  var result1 = document.getElementById("result1")
+		  result1.value = data.result1
+		  $("#result2").text(data.result2);
+		  var result2 = document.getElementById("result2")
+		  result2.value = data.result2
+		  $("#result3").text(data.result3);
+		  var result3 = document.getElementById("result3")
+		  result3.value = data.result3
+		});
+		return false;
+	  });
+	});
+	function myFunction() {
+	  var x = document.getElementById("model-output");
+	  if (x.style.display === "none") {
+	    x.style.display = "block";
+	  } else {
+	    x.style.display = "none";
+	  }
+	};
+</script>
+{% endblock %}
+
+{% block styles %}
+{{super()}}
+<style type="text/css">
+	textarea {height:100px;width:500px;font-size:14pt;}
+	#sliderInput {width:500px;}
+	.navbar-default{
+}
+</style>
+{% endblock %}

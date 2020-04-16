@@ -1,0 +1,158 @@
+{% extends "bootstrap/base.html" %}
+
+{% block navbar %}
+{{super()}}
+<nav class="navbar navbar-default">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="#">Review Yelp-er</a>
+        </div>
+        <div id="navbar" class="collapse navbar-collapse">
+          	<ul class="nav navbar-nav">
+	            <li><a href="/">Home</a></li>
+				<li class="dropdown">
+	          		<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Generators <span class="caret"></span></a>
+	          		<ul class="dropdown-menu">
+	            		<li><a href="/food_1_star">1 Star Food Review</a></li>
+	            		<li><a href="/food_5_star">5 Star Food Review</a></li>
+	            		<li role="separator" class="divider"></li>
+	            		<li><a href="/general_1_star">1 Star General Review</a></li>
+	            		<li><a href="/general_5_star">5 Star General Review</a></li>
+	          		</ul>
+	        	</li>
+          	</ul>
+        </div>
+      </div>
+    </nav>
+{% endblock %}
+
+{% block content %}	
+<div class="container">
+  	<h3>This is the 1 star food review generator!</h3>
+	<div class = "row">
+		<div class="col col-lg-6">
+			<form>
+				<p>Please start typing your review here: </p>				
+				<textarea class="scrollabletextbox" name="message"></textarea>
+				<a href=# id=process_input><button class='btn btn-default' onclick="myFunction()">Submit</button></a>
+			</form>
+		</div>
+		<div class="col-md-auto">
+			<form name="complexity">
+			  <div class="form-group">
+			    <label for="formControlRange"><output id="sliderOutput">Adjust the Complexity: 0.7</output> </label>
+			    <input type="range" class="form-control-range" id="sliderInput" value="0.7" min="0.1" 
+			    	max="1" oninput="sliderOutput.value = 'Adjust the Complexity: '  + sliderInput.value" step = "0.1" name = "slider">
+			  </div>
+			</form>
+		</div>
+	</div>
+	<div class="btn-group-vertical" id = 'model-output' display = "none">
+		<label>Results Generated:</label>
+		<button id=result1 onclick="selectOutput1()" type="button" class="btn btn-secondary">Loading..</button>
+  		<button id=result2 onclick="selectOutput2()" type="button" class="btn btn-secondary">Loading..</button>
+  		<button id=result3 onclick="selectOutput3()" type="button" class="btn btn-secondary">Loading..</button>
+	</div>
+</div>
+{% endblock %}
+
+{% block scripts %}
+{{super()}}
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.7/angular.min.js"></script>
+<script type=text/javascript>
+	$(function() {
+	  $('a#process_input').bind('click', function() {
+		$.getJSON('/food_1', {
+		  message: $('textarea[name="message"]').val(),
+		  complexity: $('input[name="slider"]').val(),
+		}, function(data) {
+		  $("#result1").text(data.result1);
+		  var result1 = document.getElementById("result1")
+		  result1.value = data.result1
+		  $("#result2").text(data.result2);
+		  var result2 = document.getElementById("result2")
+		  result2.value = data.result2
+		  $("#result3").text(data.result3);
+		  var result3 = document.getElementById("result3")
+		  result3.value = data.result3
+		});
+		return false;
+	  });
+	});
+	function myFunction() {
+	  var x = document.getElementById("model-output");
+	  if (x.style.display === "none") {
+	    x.style.display = "block";
+	  } else {
+	    x.style.display = "none";
+	  }
+	};
+	function selectOutput1() {
+	  var result = document.getElementById("result1")
+	  var textbox = document.getElementsByName("message")[0];
+	  console.log("Original Value")
+	  console.log(textbox.value)
+	  textbox.value = result.value
+	  console.log("New Value")
+	  console.log(textbox.value)
+	  $("#result1").text('Loading...');
+	  $("#result2").text('Loading...');
+	  $("#result3").text('Loading...');
+	  var x = document.getElementById("model-output");
+	  if (x.style.display === "none") {
+	    x.style.display = "block";
+	  } else {
+	    x.style.display = "none";
+	  }
+	};
+	function selectOutput2() {
+	  var result = document.getElementById("result2")
+	  var textbox = document.getElementsByName("message")[0];
+	  textbox.value = result.value
+	  $("#result1").text('Loading...');
+	  $("#result2").text('Loading...');
+	  $("#result3").text('Loading...');
+	  var x = document.getElementById("model-output");
+	  if (x.style.display === "none") {
+	    x.style.display = "block";
+	  } else {
+	    x.style.display = "none";
+	  }
+	};
+	function selectOutput3() {
+	  var result = document.getElementById("result3")
+	  var textbox = document.getElementsByName("message")[0];
+	  textbox.value = result.value
+	  $("#result1").text('Loading...');
+	  $("#result2").text('Loading...');
+	  $("#result3").text('Loading...');
+	  var x = document.getElementById("model-output");
+	  if (x.style.display === "none") {
+	    x.style.display = "block";
+	  } else {
+	    x.style.display = "none";
+	  }
+	};
+	//To display the value of the slider
+	$(document).on('input', '#myRange', function() {
+	    $('#slider_value').html( $(this).val() );
+	});
+</script>
+{% endblock %}
+
+{% block styles %}
+{{super()}}
+<style type="text/css">
+	textarea {height:100px;width:500px;font-size:14pt;}
+	#sliderInput {width:500px;}
+	#model-output {display : none;}
+	.navbar-default{
+}
+</style>
+{% endblock %}
