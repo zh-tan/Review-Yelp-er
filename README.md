@@ -46,7 +46,7 @@ __Objective__ \
 Train 2 LSTM models on 1 star and 5 star reviews. Note that this is only scoped to food-related reviews.
 
 __Setup__
-1. Ensure that the reviews1_cleaned.txt and reviews5_cleaned.txt are in the datafiles folder.
+1. Ensure that the reviews1_cleaned.txt and reviews5_cleaned.txt are in the datafiles folder (lstm_final/datafiles).
 2. Code needs to be ran on tensorflow version 1
 3. Code has to be ran on colab with 25gb ram (>12 gb ram will be used) and runtime has to be either GPU or TPU.
 
@@ -60,7 +60,7 @@ This is the training phase of GPT-2. Elaborated in our report and presentation, 
 
 __Setup__
 1. Ensure that gpt-2-simple package is installed and you have sufficient RAM and GPU to train the large model
-2. Make sure that dataset is in same folder as notebook
+2. Make sure that dataset is in same folder as notebook (GPT-2/)
 3. This was trained in Colab with GPU and High RAM (30GB RAM) and Google Cloud Platform (1x P100 GPU and 15GB n1-standard-4 CPUs)
 4. Ensure you have at least 10 GB of harddisk space
 
