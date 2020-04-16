@@ -34,7 +34,9 @@ __Content__
 
 # Exploratory Data Analysis
 __Objective__ \
-To observe the distribution of words between a good review and a bad review.
+To observe the distribution of words between a good review and a bad review. \
+View scatterplot at https://zh-tan.github.io/review-yelper.github.io/. \
+It takes about 2-5mins to load. 
 
 __Content__
 1. Produce scatterplot using scattertext
