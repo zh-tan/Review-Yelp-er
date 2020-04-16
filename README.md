@@ -86,10 +86,23 @@ __PCA on Tensorboard__ \
 __Objective__ \
 To generate a Proof-of-Concept using the trained GPT-2 models. We created an app that simulates the autocomplete feature. Instead of just suggesting a word, the autocomplete feature is able to suggest 3 sentences based on the input given. 
 
+__Setup__ \
+Ensure you are in the directory of the py files and just run main.py
+![](images/starting_demo.jpeg) 
+
+__Instructions__ \ 
+1. There are dropdowns for you to select the type of model to use (1 star or 5 star)
+2. There is a scale on "complexity", which uses temperature scaling to enable the mode to generate more complex outputs. A higher number results in more flamboyant language. 
+3. Key in text
+4. Click submit
+5. Repeat
+
+__Example__ 
 1. You may key in any input you like. Let's say the fish and chips were bad but I do not know how to describe it, let's key in "The fish and chips was"
 2. Click on submit and the model will generate 3 suggestions for you to pick
 ![](images/demo_1.jpeg) 
-3. Click on any of the suggestions and the text would autocomplete your input 
+3. Click on any of the suggestions and the text would autocomplete your input
 ![](images/demo_2.jpeg) 
 4. You may edit the the model's suggestion and click on submit once the description is fitting
 ![](images/demo_3.jpeg) 
+5. Repeat until you are satisfied with the length and quality of the review generated
