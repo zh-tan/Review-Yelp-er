@@ -1,7 +1,7 @@
 # Review-Yelp-er
 A text generation project as part of BT4222 - Mining Web Data for Business Insights. 
 
-As one of our teammates returned from US after his exchange, he realised that there was one problem he faced when he stumbled upon good food using Yelp - there is a word limit requirement before you can leave a review. As a lazy person, this deterred him from giving reviews. 
+As one of our teammates returned from US after his exchange, he realised that there was one problem he faced when he stumbled upon good food using Yelp - there is a word limit requirement before you can leave a review. He felt that this requirement was a chore and this deterred him from giving reviews. 
 
 Hence, we thought that we could use Deep Learning to solve this problem by creating a Review "Yelp-er". By suggesting sentences based on an input, this would help users like our teammate by giving them suggestions and possibly even writing whole the review. 
 
