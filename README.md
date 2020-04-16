@@ -7,7 +7,7 @@ Hence, we thought that we could use Deep Learning to solve this problem by creat
 
 
 # Consolidated dataset
-Google drive to store our dataset as the files are big and unable to be uploaded to github. (Link)
+Google drive to store our dataset and models as the files are big and can't be be uploaded to github. (https://drive.google.com/open?id=1SwM1IzteNN5q229w_2KE1NFL1CSnj-Hn)
 
 # General Setup
 1. Run pip install -r requirements.txt
