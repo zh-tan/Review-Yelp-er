@@ -11,7 +11,7 @@ Google drive to store our dataset as the files are big and unable to be uploaded
 
 # General Setup
 1. Run pip install -r requirements.txt
-2. Download dataset and place it in the same folder as notebook
+2. Download dataset and checkpoints from google drive and place it in the instructions specified in the sections
 3. If running on local, ensure that CUDA is installed and you have a good GPU
 
 # System Requirements
@@ -88,6 +88,8 @@ To generate a Proof-of-Concept using the trained GPT-2 models. We created an app
 
 __Setup__ 
 1. Ensure that the checkpoint files are in the checkpoint folder (Demo/checkpoint). Download the files from Google Drive link provided above
+![](images/demo_directory.jpeg) 
+
 2. Ensure you are in the directory of the py files and just run main.py
 ![](images/starting_demo.jpeg) 
 
