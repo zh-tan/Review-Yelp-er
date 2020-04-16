@@ -77,7 +77,7 @@ Review Star 1 \
 Review Star 5 \
 ![](images/review_star_5.gif) \
 
-__PCA on Tensorboard__ \ 
+__PCA on Tensorboard__ 
 ![](images/tensorboard_pca_graph.gif) 
 
 
@@ -90,7 +90,7 @@ __Setup__ \
 Ensure you are in the directory of the py files and just run main.py
 ![](images/starting_demo.jpeg) 
 
-__Instructions__ \ 
+__Instructions__ 
 1. There are dropdowns for you to select the type of model to use (1 star or 5 star)
 2. There is a scale on "complexity", which uses temperature scaling to enable the mode to generate more complex outputs. A higher number results in more flamboyant language. 
 3. Key in text
