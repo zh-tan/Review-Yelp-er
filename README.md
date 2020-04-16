@@ -85,3 +85,11 @@ __PCA on Tensorboard__ \
 # Demo
 __Objective__ \
 To generate a Proof-of-Concept using the trained GPT-2 models. We created an app that simulates the autocomplete feature. Instead of just suggesting a word, the autocomplete feature is able to suggest 3 sentences based on the input given. 
+
+1. You may key in any input you like. Let's say the fish and chips were bad but I do not know how to describe it, let's key in "The fish and chips was"
+2. Click on submit and the model will generate 3 suggestions for you to pick
+![](images/demo_1.jpeg) 
+3. Click on any of the suggestions and the text would autocomplete your input 
+![](images/demo_2.jpeg) 
+4. You may edit the the model's suggestion and click on submit once the description is fitting
+![](images/demo_3.jpeg) 
