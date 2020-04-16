@@ -86,8 +86,9 @@ __PCA on Tensorboard__
 __Objective__ \
 To generate a Proof-of-Concept using the trained GPT-2 models. We created an app that simulates the autocomplete feature. Instead of just suggesting a word, the autocomplete feature is able to suggest 3 sentences based on the input given. 
 
-__Setup__ \
-Ensure you are in the directory of the py files and just run main.py
+__Setup__ 
+1. Ensure that the checkpoint files are in the checkpoint folder (Demo/checkpoint). Download the files from Google Drive link provided above
+2. Ensure you are in the directory of the py files and just run main.py
 ![](images/starting_demo.jpeg) 
 
 __Instructions__ 
