@@ -42,6 +42,8 @@ It takes about 2-5mins to load.
 
 __Content__
 1. Produce scatterplot using scattertext
+![](images/scatterplot.jpeg.png) 
+
 
 # LSTM
 __Objective__ \
