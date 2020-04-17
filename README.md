@@ -1,9 +1,9 @@
 # Review-Yelp-er
 A text generation project as part of BT4222 - Mining Web Data for Business Insights. 
 
-As one of our teammates returned from US after his exchange, he realised that there was one problem he faced when he stumbled upon good food using Yelp - there is a word limit requirement before you can leave a review. He felt that this requirement was a chore and this deterred him from giving reviews. 
+Minimum word count restriction has posed to be a problem for writing reviews on User-Generated Content (UGC) platforms such as Yelp. This has hindered many satisfied customers to leave feedback on Yelp. We also had a user story from our very own team member while he was on exchange in the US, where he had a positive experience with Yelp’s and most of the recommendations. However, the need for a minimum word count is a chore for him, be it to give positive or negative reviews. Thus, he ended up not writing reviews for some restaurants just because of the minimum word count and this posed an issue for crowd-sourced review platform as they are unable to ensure accurate and updated reviews on the restaurants as most users do not want to write them.
 
-Hence, we thought that we could use Deep Learning to solve this problem by creating a Review "Yelp-er". By suggesting sentences based on an input, this would help users like our teammate by giving them suggestions and possibly even writing whole the review. 
+Hence, we thought that we could use Deep Learning to solve this problem by creating a Review "Yelp-er". By suggesting sentences based on an input, this would help users like our teammate by giving them suggestions and possibly even writing the whole review. 
 
 
 # Consolidated dataset
