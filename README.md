@@ -74,6 +74,8 @@ Train 2 GPT-2 Large models on Food and General dataset.
 4. Trained on Food (Review star 5) 
 
 __Autoregressive Property__ \
+To demonstrate the autoregressive property of GPT-2, we have created Sankey Diagrams where it shows the prediction of the next token for GPT-2. This is important as it helps us understand how the model is predicting for 1 star vs 5 star reviews. 
+
 Review Star 1 \
 ![](images/review_star_1.gif) \
 Review Star 5 \
