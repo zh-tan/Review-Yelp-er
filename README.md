@@ -113,3 +113,10 @@ __Example__
 4. You may edit the model's suggestion and click on submit once the description is fitting
 ![](images/demo_3.jpeg) 
 5. Repeat until you are satisfied with the length and quality of the review generated
+
+# Contributions
+1. Lucas - Data cleaning, Exploratory Data Analysis
+2. Adrian - Data cleaning, LSTM modelling
+3. Zhe Hao - Data cleaning, Scattertext visualisation, GPT-2 modelling, Sankey Diagrams 
+4. Ryan - Demo, Field Study
+5. Kai Le - Demo, Field Study
