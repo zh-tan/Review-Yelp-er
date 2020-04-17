@@ -110,6 +110,6 @@ __Example__
 ![](images/demo_1.jpeg) 
 3. Click on any of the suggestions and the text would autocomplete your input
 ![](images/demo_2.jpeg) 
-4. You may edit the the model's suggestion and click on submit once the description is fitting
+4. You may edit the model's suggestion and click on submit once the description is fitting
 ![](images/demo_3.jpeg) 
 5. Repeat until you are satisfied with the length and quality of the review generated
