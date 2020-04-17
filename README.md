@@ -1,4 +1,6 @@
 # Review-Yelp-er
+The Review Yelp-er (Helper) - A Review Generator that creates a review easily! 
+
 A text generation project as part of BT4222 - Mining Web Data for Business Insights. 
 
 Minimum word count restriction has posed to be a problem for writing reviews on User-Generated Content (UGC) platforms such as Yelp. This has hindered many satisfied customers to leave feedback on Yelp. We also had a user story from our very own team member while he was on exchange in the US, where he had a positive experience with Yelp’s and most of the recommendations. However, the need for a minimum word count is a chore for him, be it to give positive or negative reviews. Thus, he ended up not writing reviews for some restaurants just because of the minimum word count and this posed an issue for crowd-sourced review platform as they are unable to ensure accurate and updated reviews on the restaurants as most users do not want to write them.
