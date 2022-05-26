@@ -1,5 +1,5 @@
 gpt_2_simple
-tensorflow==1.15
+tensorflow==2.7.2
 Flask
 wtforms
 flask-bootstrap
