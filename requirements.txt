@@ -20,5 +20,5 @@ seaborn==0.10.0
 tensorboard==1.15.0
 tensorflow-estimator==1.15.1
 toposort==1.5
-tornado==6.0.3
+tornado==6.3.2
 
